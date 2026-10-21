@@ -1,0 +1,45 @@
+n = int(input("Enter number of subjects: "))
+
+if n <= 0:
+    print("Invalid number of subjects!")
+
+else:
+    marks = []
+    valid = True
+
+    for i in range(n):
+        mark = int(input("Enter marks for subject " + str(i + 1) + ": "))
+
+        if mark < 0 or mark > 100:
+            print("Invalid marks!")
+            valid = False
+            break
+
+        marks.append(mark)
+
+    if valid:
+        pass_mark = 35
+        failed = []
+
+        for i in range(n):
+            if marks[i] < pass_mark:
+                failed.append(i)
+
+        if len(failed) == 0:
+            print("Result: PASS")
+
+        elif len(failed) == 1:
+            index = failed[0]
+            grace_needed = pass_mark - marks[index]
+
+            if grace_needed <= 5:
+                marks[index] = pass_mark
+                print("Grace marks awarded:", grace_needed)
+                print("Result: PASS with grace marks")
+            else:
+                print("Result: FAIL")
+
+        else:
+            print("Result: FAIL")
+
+        print("Final marks:", marks)
