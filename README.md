@@ -18,4 +18,16 @@ CASE STUDIES:
     Case study 8: Multi-Stage Examination Eligibility System
     Case study 9: Fuel Consumption and Route Comparison
     Case study 10:  Retail Billing with Multiple Discount Rules
-    
+
+Case studies consist of:
+
+    1.Problem statement
+    2.Objectives
+    3.Assumptions
+    4.ALgorithm
+    5.FLowchart
+    6.Pseudocode
+    7.Python source code
+    8.Testcases
+    9.Output screenshots
+    10.Conclusion
