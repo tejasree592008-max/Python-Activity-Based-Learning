@@ -1,0 +1,30 @@
+balance = float(input("Enter initial balance: Rs. "))
+n = int(input("Enter number of transactions: "))
+
+if balance < 0 or n < 0:
+    print("Invalid input!")
+
+else:
+    for i in range(n):
+        print("\nTransaction", i + 1)
+
+        transaction_type = input( "Enter D for Deposit or W for Withdrawal: ")
+        amount = float(input("Enter amount: Rs. "))
+
+        if amount <= 0:
+            print("Invalid amount!")
+
+        elif transaction_type == "D":
+            balance = balance + amount
+            print("Deposit successful.")
+
+        elif transaction_type == "W":
+            if amount <= balance:
+                balance = balance - amount
+                print("Withdrawal successful.")
+            else:
+                print("Insufficient balance!")
+
+        else:
+            print("Invalid transaction type!")
+        print("Current balance: Rs.", round(balance, 2))
