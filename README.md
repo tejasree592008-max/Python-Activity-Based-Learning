@@ -18,9 +18,9 @@ Each case study includes a problem description, algorithm, pseudocode, flowchart
 1. ATM Transaction Sequence Simulation
 2. Attendance Recovery Computation
 3. Examination Result and Grace-Mark Validation
-4. Food Waste Monitoring System
-5. Fuel Consumption and Route Comparison
-6. Multi-Stage Examination Eligibility System
+4. Multi-Stage Examination Eligibility System
+5. Food Waste Monitoring System
+6. Fuel Consumption and Route Comparison
 7. Advanced Numeric Pattern Generator
 8. Password Policy Validation
 9. Progressive Electricity Billing
