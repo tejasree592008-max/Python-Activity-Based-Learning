@@ -1,33 +1,55 @@
-Name: Ch.Teja Sree
+# Python Activity-Based Learning (ABL)
 
-Roll no: 26000882
+## Student Details
 
-Branch: CSE Artificial Intelligence and Machine Learning
+- **Name:** Ch.Teja Sree
+- **Roll Number:** 26000882
+- **Branch:** CSE-AIML
+- **Section:** CSM-1
 
-Section: CSM 1
+## About the Project
 
-CASE STUDIES:
+This repository contains 10 Python programming case studies completed as part of the Activity-Based Learning (ABL) assignment. The objective is to improve logical thinking, problem-solving skills, and practical knowledge of Python programming.
 
-    Case study 1: Attendance Recovery Consumption
-    Case study 2: Progressive Electricity Billing
-    Case study 3: ATM Transaction Sequence Simulation
-    Case study 4: Examination Result and Grace-Mark Validation
-    Case study 5: Password Policy Validation
-    Case study 6: Advanced Numeric Pattern Generator
-    Case study 7: Food Waste Monitoring System 
-    Case study 8: Multi-Stage Examination Eligibility System
-    Case study 9: Fuel Consumption and Route Comparison
-    Case study 10:  Retail Billing with Multiple Discount Rules
+Each case study includes a problem description, algorithm, pseudocode, flowchart, Python source code, and sample output, as applicable.
 
-Case studies consist of:
+## Case Studies
 
-    1.Problem statement
-    2.Objectives
-    3.Assumptions
-    4.ALgorithm
-    5.FLowchart
-    6.Pseudocode
-    7.Python source code
-    8.Testcases
-    9.Output screenshots
-    10.Conclusion
+1. ATM Transaction Sequence Simulation
+2. Attendance Recovery Computation
+3. Examination Result and Grace-Mark Validation
+4. Food Waste Monitoring System
+5. Fuel Consumption and Route Comparison
+6. Multi-Stage Examination Eligibility System
+7. Advanced Numeric Pattern Generator
+8. Password Policy Validation
+9. Progressive Electricity Billing
+10. Retail Billing with Multiple Discount Rules
+
+## Technologies Used
+
+- **Programming Language:** Python
+- **Tools:** Python IDLE / VS Code
+- **Platform:** GitHub
+
+## Learning Outcomes
+
+Through these case studies, I practised:
+
+- Using variables, data types, and operators.
+- Taking input from users and displaying output.
+- Applying conditional statements and loops.
+- Developing algorithms, pseudocode, and flowcharts.
+- Solving real-world problems using Python.
+- Testing programs with different inputs.
+
+## Conclusion
+
+This ABL assignment helped me strengthen my Python programming fundamentals and develop a systematic approach to solving problems. It also provided practical experience in writing, testing, organizing, and publishing Python programs on GitHub.
+
+---
+
+**Submitted by:** Ch.Teja Sree  
+**Roll Number:** 26000882  
+**Branch:** CSE-AIML  
+**Section:** CSM-1
