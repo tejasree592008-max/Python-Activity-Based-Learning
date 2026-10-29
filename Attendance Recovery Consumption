@@ -1,0 +1,31 @@
+total_classes = int(input("Enter total classes conducted: "))
+attended_classes = int(input("Enter classes attended: "))
+required_percentage = 75
+
+if total_classes <= 0 or attended_classes < 0 or attended_classes > total_classes:
+    print("Invalid input! Please enter valid class details.")
+
+else:
+    attendance = (attended_classes / total_classes) * 100
+
+    print("Current attendance:", round(attendance, 2), "%")
+
+    if attendance >= required_percentage:
+        print("Attendance Requirement: Eligible")
+        print("Additional classes required: 0")
+
+    else:
+        extra_classes = 0
+
+        while ((attended_classes + extra_classes) /
+               (total_classes + extra_classes)) * 100 < required_percentage:
+            extra_classes += 1
+
+        new_attendance = (
+            (attended_classes + extra_classes) /
+            (total_classes + extra_classes)
+        ) * 100
+
+        print("Attendance Requirement: Not Eligible")
+        print("Additional classes to attend:", extra_classes)
+        print("Updated attendance:", round(new_attendance, 2), "%")
