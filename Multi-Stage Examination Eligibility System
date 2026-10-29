@@ -1,0 +1,12 @@
+attendance = float(input("Enter attendance percentage: "))
+lab = input("Is laboratory work completed? (yes/no): ")
+marks = float(input("Enter internal assessment marks: "))
+
+if attendance < 0 or attendance > 100 or marks < 0 or marks > 100:
+    print("Invalid input!")
+
+elif attendance >= 75 and lab == "yes" and marks >= 40:
+    print("Eligible for Final Examination")
+
+else:
+    print("Not Eligible for Final Examination")
