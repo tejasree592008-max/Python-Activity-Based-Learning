@@ -1,0 +1,26 @@
+days = int(input("Enter number of days: "))
+
+if days <= 0:
+    print("Invalid number of days!")
+
+else:
+    for i in range(days):
+        print("\nDay", i + 1)
+
+        prepared = int(input("Enter meals prepared: "))
+        served = int(input("Enter meals served: "))
+
+        if prepared <= 0 or served < 0 or served > prepared:
+            print("Invalid meal data!")
+
+        else:
+            leftovers = prepared - served
+            wastage = (leftovers / prepared) * 100
+
+            print("Leftover meals:", leftovers)
+            print("Wastage percentage:", round(wastage, 2), "%")
+
+            if wastage > 10:
+                print("High Food Waste")
+            else:
+                print("Acceptable Food Waste")
