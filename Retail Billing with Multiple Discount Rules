@@ -1,0 +1,41 @@
+n = int(input("Enter number of products: "))
+subtotal = 0
+total_tax = 0
+
+for i in range(1, n + 1):
+    print("\nProduct", i)
+
+    name = input("Enter product name: ")
+    category = input("Enter category (essential/other): ")
+    price = float(input("Enter price: "))
+    quantity = int(input("Enter quantity: "))
+
+    product_total = price * quantity
+    subtotal = subtotal + product_total
+
+    if category == "essential":
+        tax = product_total * 5 / 100
+    else:
+        tax = product_total * 12 / 100
+
+    total_tax = total_tax + tax
+
+    print("Product total:", product_total)
+
+if subtotal >= 2000:
+    discount = subtotal * 10 / 100
+elif subtotal >= 1000:
+    discount = subtotal * 5 / 100
+else:
+    discount = 0
+
+if discount > 300:
+    discount = 300
+
+final_bill = subtotal + total_tax - discount
+
+print("\n----- FINAL BILL -----")
+print("Subtotal: Rs.", round(subtotal, 2))
+print("Total tax: Rs.", round(total_tax, 2))
+print("Discount: Rs.", round(discount, 2))
+print("Final amount: Rs.", round(final_bill, 2))
